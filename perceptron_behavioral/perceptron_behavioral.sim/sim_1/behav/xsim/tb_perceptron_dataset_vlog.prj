@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../perceptron_behavioral.srcs/sources_1/new/perceptron_dataset.v" \
+"../../../../perceptron_behavioral.srcs/sim_1/new/tb_perceptron_dataset.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

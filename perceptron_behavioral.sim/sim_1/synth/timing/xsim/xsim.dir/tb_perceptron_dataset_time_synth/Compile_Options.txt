@@ -1,0 +1,1 @@
+-wto "9220e5f456894dda80417d8e4da5bc81" --incr --debug "typical" --relax --mt "2" --maxdelay -L "xil_defaultlib" -L "simprims_ver" -L "secureip" --snapshot "tb_perceptron_dataset_time_synth" -transport_int_delays -pulse_r "0" -pulse_int_r "0" -pulse_e "0" -pulse_int_e "0" "xil_defaultlib.tb_perceptron_dataset" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_perceptron_dataset_time_synth.v" \
+"../../../../../perceptron_behavioral.srcs/sim_1/new/tb_perceptron_dataset.v" \
+
+# Do not sort compile order
+nosort
