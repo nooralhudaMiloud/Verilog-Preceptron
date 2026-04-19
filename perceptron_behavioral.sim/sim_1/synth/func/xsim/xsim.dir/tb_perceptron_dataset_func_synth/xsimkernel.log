@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_perceptron_dataset_func_synth/xsimk.exe -simmode gui -wdb tb_perceptron_dataset_func_synth.wdb -simrunnum 0 -socket 12879
-Design successfully loaded
-Design Loading Memory Usage: 13804 KB (Peak: 13804 KB)
-Design Loading CPU Usage: 77 ms
-Simulation completed
-Simulation Memory Usage: 16084 KB (Peak: 16084 KB)
-Simulation CPU Usage: 202 ms

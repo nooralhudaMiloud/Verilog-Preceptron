@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/perceptron_behavioral/perceptron_behavioral/perceptron_behavioral.sim/sim_1/synth/timing/xsim/tb_perceptron_dataset_time_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module perceptron_dataset
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/perceptron_behavioral/perceptron_behavioral/perceptron_behavioral.srcs/sim_1/new/tb_perceptron_dataset.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_perceptron_dataset
