@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-create_project -in_memory -part xc7a15tcpg236-1
+create_project -in_memory -part xc7a200tfbg676-3
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -40,7 +40,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top perceptron_dataset -part xc7a15tcpg236-1
+synth_design -top perceptron_dataset -part xc7a200tfbg676-3
 
 
 # disable binary constraint mode for synth run checkpoints

@@ -1,28 +1,31 @@
 `timescale 1ns / 1ps
 
 module tb_perceptron_dataset;
-
-    // --- 1. ÇáÈÇÑÇãÊÑÇÊ (íÌÈ Ãä ÊØÇÈŞ ÇáãæÏíæá ÇáÃÕáí) ---
-    //15'd3277;
-
-    // --- 2. ÇáÅÔÇÑÇÊ (Inputs as reg, Outputs as wire) ---
+    //  ÇáÅÔÇÑÇÊ (Inputs as reg, Outputs as wire) 
+    parameter N_TB = 6;
     reg clk;
     reg rst;
     reg start;
     reg [2:0] gate_flag;
+   //  parameter N = 10;
   //  reg  state;
     wire done;
     wire is_converged;
-
+    // ÃÓáÇß áÇÓÊŞÈÇá ÇáÃæÒÇä æÇáÇäÍíÇÒ ãä ÇáãæÏíæá
+     wire signed [(32*N_TB)-1:0] out_w_flattened;
+     wire signed [31:0] out_b;
     // --- 3. ÑÈØ ÇáãæÏíæá (Unit Under Test) ---
-  perceptron_dataset uut (
+ perceptron_dataset #(
+            .N(N_TB)
+        ) uut (
         .clk(clk),
-        //.state(state),
         .rst(rst),
         .start(start),
          .gate_flag(gate_flag),
         .done(done),
-        .is_converged(is_converged)
+        // ÑÈØ ÇáãÎÇÑÌ ÇáÌÏíÏÉ
+       .out_w_flattened(out_w_flattened),
+       .out_b(out_b)
     );
 
     // --- 4. ÊæáíÏ äÈÖÇÊ ÇáÓÇÚÉ (Clock Generation) ---
@@ -51,19 +54,7 @@ module tb_perceptron_dataset;
         gate_flag = 3'd0;
 
         #10;
-             //  y<=(sum[30] == 1'b0)?1'b1:1'b0;    
-     //   #50;
-//        $display("---------------------------------------");
-//        $display("Time: %t | Training Finished!", $time);
-//        if (is_converged) begin
-//            $display("RESULT: SUCCESS - The model learned the AND gate!");
-//        end else begin
-//            $display("RESULT: FAILED - Reached Max Epochs without convergence.");
-//        end
-//        $display("Final Epoch Count: %0d", uut.epoch);
-//        $display("---------------------------------------");
-        
-        
+
            wait(done==1); 
            $finish;
 //        $display("Status Update: Epoch [%0d] | Any Updates in last cycle? %b widgate =[%0d %0d %0d %0d %0d %0d |%0d]", uut.epoch, uut.any_update,

@@ -1,8 +1,7 @@
 module perceptron_dataset
 #(
-    parameter N = 10,
+    parameter N = 6,
     parameter DATASET = 1<<N,
-    parameter [31:0] THRESHOLD = 31'd0, 
     parameter SHIFT = 26
 )
 (
@@ -11,7 +10,8 @@ module perceptron_dataset
     input rst,
     input start,
     output reg done,
-    output reg is_converged
+    output reg signed [(32*N)-1:0] out_w_flattened, 
+    output reg signed [31:0] out_b
 );
 
     // ========= Dataset & Weights =========
@@ -28,8 +28,7 @@ module perceptron_dataset
     reg prediction;
      // 6-bit integer
     //26-bit fractional 
-    localparam signed [31:0] RL =6558; // Learning Rate (0.125)  
-    // (32'd1 << (SHIFT - 3))
+    localparam signed [31:0] RL =(32'd1 << (SHIFT - 3)); // Learning Rate (0.125)  
     // ========= FSM States =========
     reg [2:0] state;
     localparam IDLE=0, GEN_TABLE=1, INIT_EPOCH=2, SUM_ST=3, UPDATE=4, DONE_ST=5;
@@ -37,7 +36,6 @@ module perceptron_dataset
     always @(posedge clk) begin
         if (!rst) begin
             done <= 0;
-            is_converged <= 0;
             state <= IDLE;
             epoch <= 0;
         end else begin
@@ -47,7 +45,6 @@ module perceptron_dataset
                     if (start) begin 
                         state <= GEN_TABLE; 
                         done <= 0; 
-                        is_converged <= 0;
                         epoch <= 0;
                     end
                 end
@@ -66,7 +63,6 @@ module perceptron_dataset
                    
                     for (j = 0; j < N; j = j + 1) w[j] <= 32'sh0;
                     b <= 32'sh0;
-                  //  w[0]<=32'sh 360448;
                     state <= INIT_EPOCH;
                 end
 
@@ -104,9 +100,12 @@ module perceptron_dataset
                         sample_idx <= sample_idx + 1;
                         state <= SUM_ST;
                     end else begin
-                        if (any_error_in_epoch) state <= INIT_EPOCH;
+                        if (any_error_in_epoch || (prediction != T[sample_idx])) state <= INIT_EPOCH;
                         else begin
-                            is_converged <= 1; 
+                          out_b <= b;
+                           for (i = 0; i < N; i = i + 1) begin
+                            out_w_flattened[i*32 +: 32] <= w[i];
+                            end 
                             state <= DONE_ST;
                         end
                     end
