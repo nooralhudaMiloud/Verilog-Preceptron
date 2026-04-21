@@ -4,6 +4,7 @@ module perceptron_dataset
     parameter DATASET = 1<<N,
     parameter SHIFT = 26
 )
+//done
 (
     input [2:0] gate_flag,
     input clk,
