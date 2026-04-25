@@ -1,10 +1,10 @@
 module perceptron_dataset
 #(
-    parameter N = 6,
+    parameter N = 2,
     parameter DATASET = 1<<N,
     parameter SHIFT = 26
 )
-//done
+
 (
     input [2:0] gate_flag,
     input clk,
@@ -101,7 +101,7 @@ module perceptron_dataset
                         sample_idx <= sample_idx + 1;
                         state <= SUM_ST;
                     end else begin
-                        if (any_error_in_epoch || (prediction != T[sample_idx])) state <= INIT_EPOCH;
+                        if (any_error_in_epoch ) state <= INIT_EPOCH;
                         else begin
                           out_b <= b;
                            for (i = 0; i < N; i = i + 1) begin

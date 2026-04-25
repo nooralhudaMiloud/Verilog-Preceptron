@@ -2,7 +2,7 @@
 
 module tb_perceptron_dataset;
     //  วแลิวัวส (Inputs as reg, Outputs as wire) 
-    parameter N_TB = 6;
+    parameter N_TB = 2;
     reg clk;
     reg rst;
     reg start;
@@ -56,6 +56,7 @@ module tb_perceptron_dataset;
         #10;
 
            wait(done==1); 
+        #100;
            $finish;
 //        $display("Status Update: Epoch [%0d] | Any Updates in last cycle? %b widgate =[%0d %0d %0d %0d %0d %0d |%0d]", uut.epoch, uut.any_update,
 //                       uut.w[0],uut.w[1],uut.w[2],uut.w[3],uut.w[4],uut.w[5],b);

@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_perceptron_dataset_behav.wdb" id="1">
+      <db_ref path="tb_perceptron_dataset_time_synth.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="tb_perceptron_dataset" />
@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3544824965953fs"></ZoomStartTime>
-      <ZoomEndTime time="3544825218032fs"></ZoomEndTime>
-      <Cursor1Time time="3544824973000fs"></Cursor1Time>
+      <ZoomStartTime time="10550031165fs"></ZoomStartTime>
+      <ZoomEndTime time="10551566980fs"></ZoomEndTime>
+      <Cursor1Time time="10550214000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="249"></NameColumnWidth>
-      <ValueColumnWidth column_width="151"></ValueColumnWidth>
+      <ValueColumnWidth column_width="147"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/tb_perceptron_dataset/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -52,289 +52,17 @@
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus1865" type="vbus">
-      <obj_property name="label">w7</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">26</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[256]" type="logic">
-         <obj_property name="ElementShortName">[256]</obj_property>
-         <obj_property name="ObjectShortName">[256]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[255]" type="logic">
-         <obj_property name="ElementShortName">[255]</obj_property>
-         <obj_property name="ObjectShortName">[255]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[254]" type="logic">
-         <obj_property name="ElementShortName">[254]</obj_property>
-         <obj_property name="ObjectShortName">[254]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[253]" type="logic">
-         <obj_property name="ElementShortName">[253]</obj_property>
-         <obj_property name="ObjectShortName">[253]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[252]" type="logic">
-         <obj_property name="ElementShortName">[252]</obj_property>
-         <obj_property name="ObjectShortName">[252]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[251]" type="logic">
-         <obj_property name="ElementShortName">[251]</obj_property>
-         <obj_property name="ObjectShortName">[251]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[250]" type="logic">
-         <obj_property name="ElementShortName">[250]</obj_property>
-         <obj_property name="ObjectShortName">[250]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[249]" type="logic">
-         <obj_property name="ElementShortName">[249]</obj_property>
-         <obj_property name="ObjectShortName">[249]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[248]" type="logic">
-         <obj_property name="ElementShortName">[248]</obj_property>
-         <obj_property name="ObjectShortName">[248]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[247]" type="logic">
-         <obj_property name="ElementShortName">[247]</obj_property>
-         <obj_property name="ObjectShortName">[247]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[246]" type="logic">
-         <obj_property name="ElementShortName">[246]</obj_property>
-         <obj_property name="ObjectShortName">[246]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[245]" type="logic">
-         <obj_property name="ElementShortName">[245]</obj_property>
-         <obj_property name="ObjectShortName">[245]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[244]" type="logic">
-         <obj_property name="ElementShortName">[244]</obj_property>
-         <obj_property name="ObjectShortName">[244]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[243]" type="logic">
-         <obj_property name="ElementShortName">[243]</obj_property>
-         <obj_property name="ObjectShortName">[243]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[242]" type="logic">
-         <obj_property name="ElementShortName">[242]</obj_property>
-         <obj_property name="ObjectShortName">[242]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[241]" type="logic">
-         <obj_property name="ElementShortName">[241]</obj_property>
-         <obj_property name="ObjectShortName">[241]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[240]" type="logic">
-         <obj_property name="ElementShortName">[240]</obj_property>
-         <obj_property name="ObjectShortName">[240]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[239]" type="logic">
-         <obj_property name="ElementShortName">[239]</obj_property>
-         <obj_property name="ObjectShortName">[239]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[238]" type="logic">
-         <obj_property name="ElementShortName">[238]</obj_property>
-         <obj_property name="ObjectShortName">[238]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[237]" type="logic">
-         <obj_property name="ElementShortName">[237]</obj_property>
-         <obj_property name="ObjectShortName">[237]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[236]" type="logic">
-         <obj_property name="ElementShortName">[236]</obj_property>
-         <obj_property name="ObjectShortName">[236]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[235]" type="logic">
-         <obj_property name="ElementShortName">[235]</obj_property>
-         <obj_property name="ObjectShortName">[235]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[234]" type="logic">
-         <obj_property name="ElementShortName">[234]</obj_property>
-         <obj_property name="ObjectShortName">[234]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[233]" type="logic">
-         <obj_property name="ElementShortName">[233]</obj_property>
-         <obj_property name="ObjectShortName">[233]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[232]" type="logic">
-         <obj_property name="ElementShortName">[232]</obj_property>
-         <obj_property name="ObjectShortName">[232]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[231]" type="logic">
-         <obj_property name="ElementShortName">[231]</obj_property>
-         <obj_property name="ObjectShortName">[231]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[230]" type="logic">
-         <obj_property name="ElementShortName">[230]</obj_property>
-         <obj_property name="ObjectShortName">[230]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[229]" type="logic">
-         <obj_property name="ElementShortName">[229]</obj_property>
-         <obj_property name="ObjectShortName">[229]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[228]" type="logic">
-         <obj_property name="ElementShortName">[228]</obj_property>
-         <obj_property name="ObjectShortName">[228]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[227]" type="logic">
-         <obj_property name="ElementShortName">[227]</obj_property>
-         <obj_property name="ObjectShortName">[227]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[226]" type="logic">
-         <obj_property name="ElementShortName">[226]</obj_property>
-         <obj_property name="ObjectShortName">[226]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[225]" type="logic">
-         <obj_property name="ElementShortName">[225]</obj_property>
-         <obj_property name="ObjectShortName">[225]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened" type="array">
+      <obj_property name="ElementShortName">out_w_flattened[319:0]</obj_property>
+      <obj_property name="ObjectShortName">out_w_flattened[319:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus1832" type="vbus">
-      <obj_property name="label">w6</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">26</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[224]" type="logic">
-         <obj_property name="ElementShortName">[224]</obj_property>
-         <obj_property name="ObjectShortName">[224]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[223]" type="logic">
-         <obj_property name="ElementShortName">[223]</obj_property>
-         <obj_property name="ObjectShortName">[223]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[222]" type="logic">
-         <obj_property name="ElementShortName">[222]</obj_property>
-         <obj_property name="ObjectShortName">[222]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[221]" type="logic">
-         <obj_property name="ElementShortName">[221]</obj_property>
-         <obj_property name="ObjectShortName">[221]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[220]" type="logic">
-         <obj_property name="ElementShortName">[220]</obj_property>
-         <obj_property name="ObjectShortName">[220]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[219]" type="logic">
-         <obj_property name="ElementShortName">[219]</obj_property>
-         <obj_property name="ObjectShortName">[219]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[218]" type="logic">
-         <obj_property name="ElementShortName">[218]</obj_property>
-         <obj_property name="ObjectShortName">[218]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[217]" type="logic">
-         <obj_property name="ElementShortName">[217]</obj_property>
-         <obj_property name="ObjectShortName">[217]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[216]" type="logic">
-         <obj_property name="ElementShortName">[216]</obj_property>
-         <obj_property name="ObjectShortName">[216]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[215]" type="logic">
-         <obj_property name="ElementShortName">[215]</obj_property>
-         <obj_property name="ObjectShortName">[215]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[214]" type="logic">
-         <obj_property name="ElementShortName">[214]</obj_property>
-         <obj_property name="ObjectShortName">[214]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[213]" type="logic">
-         <obj_property name="ElementShortName">[213]</obj_property>
-         <obj_property name="ObjectShortName">[213]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[212]" type="logic">
-         <obj_property name="ElementShortName">[212]</obj_property>
-         <obj_property name="ObjectShortName">[212]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[211]" type="logic">
-         <obj_property name="ElementShortName">[211]</obj_property>
-         <obj_property name="ObjectShortName">[211]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[210]" type="logic">
-         <obj_property name="ElementShortName">[210]</obj_property>
-         <obj_property name="ObjectShortName">[210]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[209]" type="logic">
-         <obj_property name="ElementShortName">[209]</obj_property>
-         <obj_property name="ObjectShortName">[209]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[208]" type="logic">
-         <obj_property name="ElementShortName">[208]</obj_property>
-         <obj_property name="ObjectShortName">[208]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[207]" type="logic">
-         <obj_property name="ElementShortName">[207]</obj_property>
-         <obj_property name="ObjectShortName">[207]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[206]" type="logic">
-         <obj_property name="ElementShortName">[206]</obj_property>
-         <obj_property name="ObjectShortName">[206]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[205]" type="logic">
-         <obj_property name="ElementShortName">[205]</obj_property>
-         <obj_property name="ObjectShortName">[205]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[204]" type="logic">
-         <obj_property name="ElementShortName">[204]</obj_property>
-         <obj_property name="ObjectShortName">[204]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[203]" type="logic">
-         <obj_property name="ElementShortName">[203]</obj_property>
-         <obj_property name="ObjectShortName">[203]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[202]" type="logic">
-         <obj_property name="ElementShortName">[202]</obj_property>
-         <obj_property name="ObjectShortName">[202]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[201]" type="logic">
-         <obj_property name="ElementShortName">[201]</obj_property>
-         <obj_property name="ObjectShortName">[201]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[200]" type="logic">
-         <obj_property name="ElementShortName">[200]</obj_property>
-         <obj_property name="ObjectShortName">[200]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[199]" type="logic">
-         <obj_property name="ElementShortName">[199]</obj_property>
-         <obj_property name="ObjectShortName">[199]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[198]" type="logic">
-         <obj_property name="ElementShortName">[198]</obj_property>
-         <obj_property name="ObjectShortName">[198]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[197]" type="logic">
-         <obj_property name="ElementShortName">[197]</obj_property>
-         <obj_property name="ObjectShortName">[197]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[196]" type="logic">
-         <obj_property name="ElementShortName">[196]</obj_property>
-         <obj_property name="ObjectShortName">[196]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[195]" type="logic">
-         <obj_property name="ElementShortName">[195]</obj_property>
-         <obj_property name="ObjectShortName">[195]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[194]" type="logic">
-         <obj_property name="ElementShortName">[194]</obj_property>
-         <obj_property name="ObjectShortName">[194]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[193]" type="logic">
-         <obj_property name="ElementShortName">[193]</obj_property>
-         <obj_property name="ObjectShortName">[193]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="vbus1799" type="vbus">
+   <wvobject fp_name="vbus3479" type="vbus">
       <obj_property name="label">w5</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[192]" type="logic">
-         <obj_property name="ElementShortName">[192]</obj_property>
-         <obj_property name="ObjectShortName">[192]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[191]" type="logic">
          <obj_property name="ElementShortName">[191]</obj_property>
          <obj_property name="ObjectShortName">[191]</obj_property>
@@ -459,18 +187,18 @@
          <obj_property name="ElementShortName">[161]</obj_property>
          <obj_property name="ObjectShortName">[161]</obj_property>
       </wvobject>
+      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[160]" type="logic">
+         <obj_property name="ElementShortName">[160]</obj_property>
+         <obj_property name="ObjectShortName">[160]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus1766" type="vbus">
+   <wvobject fp_name="vbus3446" type="vbus">
       <obj_property name="label">w4</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[160]" type="logic">
-         <obj_property name="ElementShortName">[160]</obj_property>
-         <obj_property name="ObjectShortName">[160]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[159]" type="logic">
          <obj_property name="ElementShortName">[159]</obj_property>
          <obj_property name="ObjectShortName">[159]</obj_property>
@@ -595,18 +323,18 @@
          <obj_property name="ElementShortName">[129]</obj_property>
          <obj_property name="ObjectShortName">[129]</obj_property>
       </wvobject>
+      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[128]" type="logic">
+         <obj_property name="ElementShortName">[128]</obj_property>
+         <obj_property name="ObjectShortName">[128]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus1733" type="vbus">
+   <wvobject fp_name="vbus3413" type="vbus">
       <obj_property name="label">w3</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[128]" type="logic">
-         <obj_property name="ElementShortName">[128]</obj_property>
-         <obj_property name="ObjectShortName">[128]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[127]" type="logic">
          <obj_property name="ElementShortName">[127]</obj_property>
          <obj_property name="ObjectShortName">[127]</obj_property>
@@ -731,18 +459,18 @@
          <obj_property name="ElementShortName">[97]</obj_property>
          <obj_property name="ObjectShortName">[97]</obj_property>
       </wvobject>
+      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[96]" type="logic">
+         <obj_property name="ElementShortName">[96]</obj_property>
+         <obj_property name="ObjectShortName">[96]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus1699" type="vbus">
+   <wvobject fp_name="vbus3380" type="vbus">
       <obj_property name="label">w2</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[96]" type="logic">
-         <obj_property name="ElementShortName">[96]</obj_property>
-         <obj_property name="ObjectShortName">[96]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_perceptron_dataset/out_w_flattened[95]" type="logic">
          <obj_property name="ElementShortName">[95]</obj_property>
          <obj_property name="ObjectShortName">[95]</obj_property>
@@ -872,7 +600,7 @@
          <obj_property name="ObjectShortName">[64]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus1666" type="vbus">
+   <wvobject fp_name="vbus3347" type="vbus">
       <obj_property name="label">w1</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -1008,7 +736,7 @@
          <obj_property name="ObjectShortName">[32]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus1633" type="vbus">
+   <wvobject fp_name="vbus3314" type="vbus">
       <obj_property name="label">w0</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
