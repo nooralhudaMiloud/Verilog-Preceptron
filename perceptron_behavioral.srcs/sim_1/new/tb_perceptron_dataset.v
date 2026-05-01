@@ -2,15 +2,16 @@
 
 module tb_perceptron_dataset;
     //  ÇáÅÔÇÑÇÊ (Inputs as reg, Outputs as wire) 
-    parameter N_TB = 2;
+    parameter N_TB = 3;
     reg clk;
     reg rst;
     reg start;
     reg [2:0] gate_flag;
    //  parameter N = 10;
   //  reg  state;
-    wire done;
-    wire is_converged;
+     wire done;
+     wire epoch;
+
     // ÃÓáÇß áÇÓÊÞÈÇá ÇáÃæÒÇä æÇáÇäÍíÇÒ ãä ÇáãæÏíæá
      wire signed [(32*N_TB)-1:0] out_w_flattened;
      wire signed [31:0] out_b;
@@ -25,7 +26,8 @@ module tb_perceptron_dataset;
         .done(done),
         // ÑÈØ ÇáãÎÇÑÌ ÇáÌÏíÏÉ
        .out_w_flattened(out_w_flattened),
-       .out_b(out_b)
+       .out_b(out_b),
+     . epoch(epoch)
     );
 
     // --- 4. ÊæáíÏ äÈÖÇÊ ÇáÓÇÚÉ (Clock Generation) ---
@@ -48,19 +50,14 @@ module tb_perceptron_dataset;
         #20;
   
                   
-        // Ì. ÅÑÓÇá ÅÔÇÑÉ ÇáÈÏÁ (Start Pulse)
-   //     $display(">>> Starting Perceptron Training for %0d inputs...",uut.N);
         start = 1;
-        gate_flag = 3'd0;
+        gate_flag = 3'd2;
 
         #10;
-
-           wait(done==1); 
-        #100;
+           wait(done==1);  
+      @(posedge clk);
            $finish;
-//        $display("Status Update: Epoch [%0d] | Any Updates in last cycle? %b widgate =[%0d %0d %0d %0d %0d %0d |%0d]", uut.epoch, uut.any_update,
-//                       uut.w[0],uut.w[1],uut.w[2],uut.w[3],uut.w[4],uut.w[5],b);
-   
+
     end
 
 endmodule
