@@ -1,6 +1,6 @@
 module perceptron_dataset
 #(
-    parameter N = 3,              //  „ “Ì«œ… N ·· Ã—»…
+    parameter N = 6,              //  „ “Ì«œ… N ·· Ã—»…
     parameter DATASET = 2**N,
     parameter SHIFT = 26
 )

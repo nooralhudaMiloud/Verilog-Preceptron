@@ -2,7 +2,7 @@
 
 module tb_perceptron_dataset;
     //  วแลิวัวส (Inputs as reg, Outputs as wire) 
-    parameter N_TB = 3;
+    parameter N_TB = 6;
     reg clk;
     reg rst;
     reg start;
